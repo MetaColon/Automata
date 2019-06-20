@@ -5,7 +5,7 @@ namespace Automata.Types
     public class Alphabet
     {
         public Alphabet(HashSet<InputSymbol> inputSymbols)
-            => this.InputSymbols = inputSymbols;
+            => InputSymbols = inputSymbols;
 
         public HashSet<InputSymbol> InputSymbols { get; }
 
@@ -13,9 +13,9 @@ namespace Automata.Types
             => obj is Alphabet alphabet && Equals(alphabet);
 
         protected bool Equals(Alphabet other)
-            => Equals(this.InputSymbols, other.InputSymbols);
+            => Equals(InputSymbols, other.InputSymbols);
 
         public override int GetHashCode()
-            => this.InputSymbols != null ? this.InputSymbols.GetHashCode() : 0;
+            => InputSymbols != null ? InputSymbols.GetHashCode() : 0;
     }
 }

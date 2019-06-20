@@ -10,24 +10,24 @@ namespace Tests.Automaton
         [Test]
         public void PositiveTest()
         {
-            State s1 = new State("S1");
-            State s2 = new State("S2");
-            InputSymbol i0 = new InputSymbol("0");
-            InputSymbol i1 = new InputSymbol("1");
+            var s1 = new State("S1");
+            var s2 = new State("S2");
+            var i0 = new InputSymbol("0");
+            var i1 = new InputSymbol("1");
 
-            HashSet<State> states = new HashSet<State> {s1, s2};
-            Alphabet alphabet = new Alphabet(new HashSet<InputSymbol> {i0, i1});
-            TransitionFunction transitionFunction = new TransitionFunction(new HashSet<PartialTransitionFunction>
+            var states = new HashSet<State> {s1, s2};
+            var alphabet = new Alphabet(new HashSet<InputSymbol> {i0, i1});
+            var transitionFunction = new DeterministicTransitionFunction(new HashSet<DeterministicPartialTransitionFunction>
             {
-                new PartialTransitionFunction(s1, i0, s2),
-                new PartialTransitionFunction(s1, i1, s1),
-                new PartialTransitionFunction(s2, i0, s1),
-                new PartialTransitionFunction(s2, i1, s2)
+                new DeterministicPartialTransitionFunction(s1, i0, s2),
+                new DeterministicPartialTransitionFunction(s1, i1, s1),
+                new DeterministicPartialTransitionFunction(s2, i0, s1),
+                new DeterministicPartialTransitionFunction(s2, i1, s2)
             });
-            HashSet<State> acceptStates = new HashSet<State> {s1};
+            var acceptStates = new HashSet<State> {s1};
 
             // Even number of zeros
-            DeterministicFiniteAutomaton automaton = new DeterministicFiniteAutomaton(
+            var automaton = new DeterministicFiniteAutomaton(
                 states,
                 alphabet,
                 transitionFunction,
@@ -36,12 +36,12 @@ namespace Tests.Automaton
                 );
 
 
-            Word negative = Word.Parse("0101010001001101", alphabet);
-            Word positive = Word.Parse("010011101010", alphabet);
+            var negative = Word.Parse("0101010001001101", alphabet);
+            var positive = Word.Parse("010011101010", alphabet);
 
 
-            bool negativeResult = automaton.Accepts(negative);
-            bool positiveResult = automaton.Accepts(positive);
+            var negativeResult = automaton.Accepts(negative);
+            var positiveResult = automaton.Accepts(positive);
 
             Assert.False(negativeResult, "The automaton was not expected to accept an odd number of zeros");
             Assert.True(positiveResult, "The automaton was expected to accept an even number of zeros");

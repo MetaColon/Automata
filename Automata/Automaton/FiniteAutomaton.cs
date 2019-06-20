@@ -4,9 +4,9 @@ using Automata.Types;
 
 namespace Automata.Automaton
 {
-    public class DeterministicFiniteAutomaton
+    public class FiniteAutomaton
     {
-        public DeterministicFiniteAutomaton(HashSet<State> states, Alphabet inputAlphabet, DeterministicTransitionFunction transitionFunction, State initialState, HashSet<State> acceptStates)
+        public FiniteAutomaton(HashSet<State> states, Alphabet inputAlphabet, TransitionFunction transitionFunction, State initialState, HashSet<State> acceptStates)
         {
             States = states;
             InputAlphabet = inputAlphabet;
@@ -17,18 +17,18 @@ namespace Automata.Automaton
 
         public HashSet<State> States { get; }
         public Alphabet InputAlphabet { get; }
-        public DeterministicTransitionFunction TransitionFunction { get; }
+        public TransitionFunction TransitionFunction { get; }
         public State InitialState { get; }
         public HashSet<State> AcceptStates { get; }
 
         public override bool Equals(object obj)
-            => obj is DeterministicFiniteAutomaton deterministicFiniteAutomaton && Equals(deterministicFiniteAutomaton);
+            => obj is FiniteAutomaton finiteAutomaton && Equals(finiteAutomaton);
 
-        protected bool Equals(DeterministicFiniteAutomaton other)
-            => Equals(States, other.States) &&
-               Equals(InputAlphabet, other.InputAlphabet) &&
-               Equals(TransitionFunction, other.TransitionFunction) &&
-               Equals(InitialState, other.InitialState) &&
+        protected bool Equals(FiniteAutomaton other)
+            => Equals(States, other.States) && 
+               Equals(InputAlphabet, other.InputAlphabet) && 
+               Equals(TransitionFunction, other.TransitionFunction) && 
+               Equals(InitialState, other.InitialState) && 
                Equals(AcceptStates, other.AcceptStates);
 
         public override int GetHashCode()
@@ -46,16 +46,19 @@ namespace Automata.Automaton
 
         public bool Accepts(Word word)
         {
-            var currentState = InitialState;
+            var currentStates = new HashSet<State> {InitialState};
             foreach (var inputSymbol in word.InputSymbols)
             {
-                if (currentState == null)
-                    return false;
-
-                currentState = TransitionFunction.GetNextState(currentState, inputSymbol);
+                var newStates = new HashSet<State>();
+                foreach (var state in currentStates)
+                {
+                    var resultStates = TransitionFunction.GetNextStates(state, inputSymbol);
+                    foreach (var resultState in resultStates)
+                        newStates.Add(resultState);
+                }
             }
 
-            return AcceptStates.Any(state => state.Equals(currentState));
+            return AcceptStates.Any(accept => currentStates.Any(accept.Equals));
         }
     }
 }

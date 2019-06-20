@@ -3,7 +3,7 @@ namespace Automata.Types
     public class InputSymbol
     {
         public InputSymbol(string value)
-            => this.Value = value;
+            => Value = value;
 
         public string Value { get; }
 
@@ -11,9 +11,9 @@ namespace Automata.Types
             => obj is InputSymbol inputSymbol && Equals(inputSymbol);
 
         protected bool Equals(InputSymbol other)
-            => string.Equals(this.Value, other.Value);
+            => string.Equals(Value, other.Value);
 
         public override int GetHashCode()
-            => this.Value != null ? this.Value.GetHashCode() : 0;
+            => Value != null ? Value.GetHashCode() : 0;
     }
 }

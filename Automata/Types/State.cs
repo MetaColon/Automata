@@ -3,7 +3,7 @@ namespace Automata.Types
     public class State
     {
         public State(string name)
-            => this.Name = name;
+            => Name = name;
 
         public string Name { get; }
 
@@ -11,9 +11,9 @@ namespace Automata.Types
             => obj is State state && Equals(state);
 
         protected bool Equals(State other)
-            => string.Equals(this.Name, other.Name);
+            => string.Equals(Name, other.Name);
 
         public override int GetHashCode()
-            => this.Name != null ? this.Name.GetHashCode() : 0;
+            => Name != null ? Name.GetHashCode() : 0;
     }
 }

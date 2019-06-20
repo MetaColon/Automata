@@ -1,26 +1,25 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\borner\\RiderProjects\\Automata\\Tests\\Tests.csproj",
+    "projectUniqueName": "/home/metacolon/Documents/work/Automata/Tests/Tests.csproj",
     "projectName": "Tests",
-    "projectPath": "C:\\Users\\borner\\RiderProjects\\Automata\\Tests\\Tests.csproj",
-    "outputPath": "C:\\Users\\borner\\RiderProjects\\Automata\\Tests\\obj\\",
+    "projectPath": "/home/metacolon/Documents/work/Automata/Tests/Tests.csproj",
+    "outputPath": "/home/metacolon/Documents/work/Automata/Tests/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.1"
     ],
     "sources": {
-      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
       "https://api.nuget.org/v3/index.json": {}
     },
     "frameworks": {
       "netcoreapp2.1": {
         "projectReferences": {
-          "C:\\Users\\borner\\RiderProjects\\Automata\\Automata\\Automata.csproj": {
-            "projectPath": "C:\\Users\\borner\\RiderProjects\\Automata\\Automata\\Automata.csproj"
+          "/home/metacolon/Documents/work/Automata/Automata/Automata.csproj": {
+            "projectPath": "/home/metacolon/Documents/work/Automata/Automata/Automata.csproj"
           }
         }
       }
