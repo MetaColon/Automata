@@ -1,37 +1,43 @@
 using System.Collections.Generic;
 using System.Linq;
 using Automata.Types;
-using Automata.Types.Finite.Deterministic;
+using Automata.Types.Finite;
+using Automata.Types.Finite.Nondeterministic;
 using Automata.Types.General;
 
 namespace Automata.Automaton
 {
-    public class DeterministicFiniteAutomaton : FiniteAutomaton
+    public class NondeterministicFiniteAutomaton : FiniteAutomaton
     {
-        public DeterministicFiniteAutomaton(HashSet<State> states, Alphabet inputAlphabet, DeterministicTransitionFunction transitionFunction, State initialState, HashSet<State> acceptStates)
+        public NondeterministicFiniteAutomaton(HashSet<State> states, Alphabet inputAlphabet, NondeterministicTransitionFunction transitionFunction, State initialState, HashSet<State> acceptStates)
             : base(states, inputAlphabet, initialState, acceptStates)
             => TransitionFunction = transitionFunction;
 
-        public DeterministicTransitionFunction TransitionFunction { get; }
+        public NondeterministicTransitionFunction TransitionFunction { get; }
 
         public override bool Accepts(Word word)
         {
-            var currentState = InitialState;
+            var currentStates = new HashSet<State> {InitialState};
             foreach (var inputSymbol in word.InputSymbols)
             {
-                if (currentState == null)
-                    return false;
+                var newStates = new HashSet<State>();
+                foreach (var state in currentStates)
+                {
+                    var resultStates = TransitionFunction.GetNextStates(state, inputSymbol);
+                    foreach (var resultState in resultStates)
+                        newStates.Add(resultState);
+                }
 
-                currentState = TransitionFunction.GetNextState(currentState, inputSymbol);
+                currentStates = newStates;
             }
 
-            return AcceptStates.Any(state => state.Equals(currentState));
+            return AcceptStates.Any(accept => currentStates.Any(accept.Equals));
         }
 
         public override bool Equals(object obj)
-            => obj is DeterministicFiniteAutomaton finiteAutomaton && Equals(finiteAutomaton);
+            => obj is NondeterministicFiniteAutomaton finiteAutomaton && Equals(finiteAutomaton);
 
-        protected bool Equals(DeterministicFiniteAutomaton other)
+        protected bool Equals(NondeterministicFiniteAutomaton other)
             => Equals(TransitionFunction, other.TransitionFunction) && base.Equals(other);
 
         public override int GetHashCode()

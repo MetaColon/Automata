@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
+using Automata.Types.General;
 
-namespace Automata.Types
+namespace Automata.Types.Finite.Deterministic
 {
-    public class DeterministicTransitionFunction
+    public class DeterministicTransitionFunction : FiniteTransitionFunction
     {
         public DeterministicTransitionFunction(HashSet<DeterministicPartialTransitionFunction> partialTransitionFunctions)
             => PartialTransitionFunctions = partialTransitionFunctions;

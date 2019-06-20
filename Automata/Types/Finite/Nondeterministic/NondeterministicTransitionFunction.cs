@@ -1,19 +1,20 @@
 using System.Collections.Generic;
 using System.Linq;
+using Automata.Types.General;
 
-namespace Automata.Types
+namespace Automata.Types.Finite.Nondeterministic
 {
-    public class TransitionFunction
+    public class NondeterministicTransitionFunction : FiniteTransitionFunction
     {
-        public TransitionFunction(HashSet<PartialTransitionFunction> partialTransitionFunctions)
+        public NondeterministicTransitionFunction(HashSet<NondeterministicPartialTransitionFunction> partialTransitionFunctions)
             => PartialTransitionFunctions = partialTransitionFunctions;
 
-        public HashSet<PartialTransitionFunction> PartialTransitionFunctions { get; }
+        public HashSet<NondeterministicPartialTransitionFunction> PartialTransitionFunctions { get; }
 
         public override bool Equals(object obj)
-            => obj is TransitionFunction transitionFunction && Equals(transitionFunction);
+            => obj is NondeterministicTransitionFunction transitionFunction && Equals(transitionFunction);
 
-        protected bool Equals(TransitionFunction other)
+        protected bool Equals(NondeterministicTransitionFunction other)
             => Equals(PartialTransitionFunctions, other.PartialTransitionFunctions);
 
         public override int GetHashCode()

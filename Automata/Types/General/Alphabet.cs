@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Automata.Types
+namespace Automata.Types.General
 {
     public class Alphabet
     {

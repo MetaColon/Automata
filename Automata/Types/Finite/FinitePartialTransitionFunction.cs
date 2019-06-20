@@ -1,10 +1,11 @@
 using System.Collections.Generic;
+using Automata.Types.General;
 
-namespace Automata.Types
+namespace Automata.Types.Finite
 {
-    public class PartialTransitionFunction
+    public abstract class FinitePartialTransitionFunction
     {
-        public PartialTransitionFunction(State inputState, InputSymbol inputSymbol, HashSet<State> resultStates)
+        public FinitePartialTransitionFunction(State inputState, InputSymbol inputSymbol, HashSet<State> resultStates)
         {
             InputState = inputState;
             InputSymbol = inputSymbol;
@@ -17,9 +18,9 @@ namespace Automata.Types
         public HashSet<State> ResultStates { get; }
 
         public override bool Equals(object obj)
-            => obj is PartialTransitionFunction partialTransitionFunction && Equals(partialTransitionFunction);
+            => obj is FinitePartialTransitionFunction partialTransitionFunction && Equals(partialTransitionFunction);
 
-        protected bool Equals(PartialTransitionFunction other)
+        protected bool Equals(FinitePartialTransitionFunction other)
             => Equals(InputState, other.InputState) && Equals(InputSymbol, other.InputSymbol) && Equals(ResultStates, other.ResultStates);
 
         public override int GetHashCode()

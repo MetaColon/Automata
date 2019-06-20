@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Automata.Types
+namespace Automata.Types.General
 {
     public class Word
     {

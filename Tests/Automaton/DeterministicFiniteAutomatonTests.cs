@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using Automata.Automaton;
 using Automata.Types;
+using Automata.Types.Finite.Deterministic;
+using Automata.Types.General;
 using NUnit.Framework;
 
 namespace Tests.Automaton
@@ -8,7 +10,7 @@ namespace Tests.Automaton
     public class DeterministicFiniteAutomatonTests
     {
         [Test]
-        public void PositiveTest()
+        public void TestEvenExample()
         {
             var s1 = new State("S1");
             var s2 = new State("S2");
