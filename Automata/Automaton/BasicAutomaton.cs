@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using Automata.Types.General;
+using DeterministicAutomata.Types.General;
 
-namespace Automata.Automaton
+namespace DeterministicAutomata.Automaton
 {
-    public abstract class FiniteAutomaton : Automaton
+    public abstract class BasicAutomaton : Automaton
     {
-        public FiniteAutomaton(HashSet<State> states, Alphabet inputAlphabet, State initialState, HashSet<State> acceptStates)
+        public BasicAutomaton(HashSet<State> states, Alphabet inputAlphabet, State initialState, HashSet<State> acceptStates)
         {
             States = states;
             InputAlphabet = inputAlphabet;
@@ -19,9 +19,9 @@ namespace Automata.Automaton
         public HashSet<State> AcceptStates { get; }
 
         public override bool Equals(object obj)
-            => obj is FiniteAutomaton finiteAutomaton && Equals(finiteAutomaton);
+            => obj is BasicAutomaton finiteAutomaton && Equals(finiteAutomaton);
 
-        protected bool Equals(FiniteAutomaton other)
+        protected bool Equals(BasicAutomaton other)
             => Equals(States, other.States) &&
                Equals(InputAlphabet, other.InputAlphabet) &&
                Equals(InitialState, other.InitialState) &&

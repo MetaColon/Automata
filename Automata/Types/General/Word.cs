@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Automata.Types.General
+namespace DeterministicAutomata.Types.General
 {
     public class Word
     {
-        public Word(List<InputSymbol> inputSymbols)
+        public Word(List<Symbol> inputSymbols)
             => InputSymbols = inputSymbols;
 
-        public List<InputSymbol> InputSymbols { get; }
+        public List<Symbol> InputSymbols { get; }
 
         public override bool Equals(object obj)
             => obj is Word word && Equals(word);
@@ -24,7 +24,7 @@ namespace Automata.Types.General
             if (alphabet.InputSymbols.Any(symbol => symbol.Value.Length != 1))
                 return null;
 
-            var inputSymbols = new List<InputSymbol>(input.Length);
+            var inputSymbols = new List<Symbol>(input.Length);
 
             foreach (var c in input)
             {

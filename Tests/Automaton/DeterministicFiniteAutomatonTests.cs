@@ -1,8 +1,9 @@
 using System.Collections.Generic;
-using Automata.Automaton;
-using Automata.Types;
-using Automata.Types.Finite.Deterministic;
-using Automata.Types.General;
+using DeterministicAutomata.Automaton;
+using DeterministicAutomata.Automaton.FiniteAutomaton;
+using DeterministicAutomata.Types;
+using DeterministicAutomata.Types.Finite.Deterministic;
+using DeterministicAutomata.Types.General;
 using NUnit.Framework;
 
 namespace Tests.Automaton
@@ -14,17 +15,17 @@ namespace Tests.Automaton
         {
             var s1 = new State("S1");
             var s2 = new State("S2");
-            var i0 = new InputSymbol("0");
-            var i1 = new InputSymbol("1");
+            var i0 = new Symbol("0");
+            var i1 = new Symbol("1");
 
             var states = new HashSet<State> {s1, s2};
-            var alphabet = new Alphabet(new HashSet<InputSymbol> {i0, i1});
-            var transitionFunction = new DeterministicTransitionFunction(new HashSet<DeterministicPartialTransitionFunction>
+            var alphabet = new Alphabet(new HashSet<Symbol> {i0, i1});
+            var transitionFunction = new DeterministicFiniteTransitionFunction(new HashSet<DeterministicFinitePartialTransitionFunction>
             {
-                new DeterministicPartialTransitionFunction(s1, i0, s2),
-                new DeterministicPartialTransitionFunction(s1, i1, s1),
-                new DeterministicPartialTransitionFunction(s2, i0, s1),
-                new DeterministicPartialTransitionFunction(s2, i1, s2)
+                new DeterministicFinitePartialTransitionFunction(s1, i0, s2),
+                new DeterministicFinitePartialTransitionFunction(s1, i1, s1),
+                new DeterministicFinitePartialTransitionFunction(s2, i0, s1),
+                new DeterministicFinitePartialTransitionFunction(s2, i1, s2)
             });
             var acceptStates = new HashSet<State> {s1};
 

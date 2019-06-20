@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 
-namespace Automata.Types.General
+namespace DeterministicAutomata.Types.General
 {
     public class Alphabet
     {
-        public Alphabet(HashSet<InputSymbol> inputSymbols)
+        public Alphabet(HashSet<Symbol> inputSymbols)
             => InputSymbols = inputSymbols;
 
-        public HashSet<InputSymbol> InputSymbols { get; }
+        public HashSet<Symbol> InputSymbols { get; }
 
         public override bool Equals(object obj)
             => obj is Alphabet alphabet && Equals(alphabet);

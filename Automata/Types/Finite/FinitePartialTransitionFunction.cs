@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using Automata.Types.General;
+using DeterministicAutomata.Types.General;
 
-namespace Automata.Types.Finite
+namespace DeterministicAutomata.Types.Finite
 {
     public abstract class FinitePartialTransitionFunction
     {
-        public FinitePartialTransitionFunction(State inputState, InputSymbol inputSymbol, HashSet<State> resultStates)
+        public FinitePartialTransitionFunction(State inputState, Symbol inputSymbol, HashSet<State> resultStates)
         {
             InputState = inputState;
             InputSymbol = inputSymbol;
@@ -13,9 +13,9 @@ namespace Automata.Types.Finite
         }
 
         public State InputState { get; }
-        public InputSymbol InputSymbol { get; }
+        public Symbol InputSymbol { get; }
 
-        public HashSet<State> ResultStates { get; }
+        protected HashSet<State> ResultStates { get; }
 
         public override bool Equals(object obj)
             => obj is FinitePartialTransitionFunction partialTransitionFunction && Equals(partialTransitionFunction);

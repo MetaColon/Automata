@@ -1,7 +1,8 @@
 using System.Collections.Generic;
-using Automata.Automaton;
-using Automata.Types.Finite.Nondeterministic;
-using Automata.Types.General;
+using DeterministicAutomata.Automaton;
+using DeterministicAutomata.Automaton.FiniteAutomaton;
+using DeterministicAutomata.Types.Finite.Nondeterministic;
+using DeterministicAutomata.Types.General;
 using NUnit.Framework;
 
 namespace Tests.Automaton
@@ -13,17 +14,17 @@ namespace Tests.Automaton
         {
             var sp = new State("p");
             var sq = new State("q");
-            var i0 = new InputSymbol("0");
-            var i1 = new InputSymbol("1");
+            var i0 = new Symbol("0");
+            var i1 = new Symbol("1");
 
             var states = new HashSet<State> {sp, sq};
-            var alphabet = new Alphabet(new HashSet<InputSymbol>{i0, i1});
-            var transitionFunction = new NondeterministicTransitionFunction(new HashSet<NondeterministicPartialTransitionFunction>
+            var alphabet = new Alphabet(new HashSet<Symbol>{i0, i1});
+            var transitionFunction = new NondeterministicFiniteTransitionFunction(new HashSet<NondeterministicFinitePartialTransitionFunction>
             {
-                new NondeterministicPartialTransitionFunction(sp, i0, new HashSet<State> {sp}),
-                new NondeterministicPartialTransitionFunction(sp, i1, new HashSet<State> {sp, sq}),
-                new NondeterministicPartialTransitionFunction(sq, i0, new HashSet<State>()),
-                new NondeterministicPartialTransitionFunction(sq, i1, new HashSet<State>())
+                new NondeterministicFinitePartialTransitionFunction(sp, i0, new HashSet<State> {sp}),
+                new NondeterministicFinitePartialTransitionFunction(sp, i1, new HashSet<State> {sp, sq}),
+                new NondeterministicFinitePartialTransitionFunction(sq, i0, new HashSet<State>()),
+                new NondeterministicFinitePartialTransitionFunction(sq, i1, new HashSet<State>())
             });
             var acceptStates = new HashSet<State>{sq};
 

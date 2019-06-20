@@ -1,19 +1,17 @@
 using System.Collections.Generic;
 using System.Linq;
-using Automata.Types;
-using Automata.Types.Finite;
-using Automata.Types.Finite.Nondeterministic;
-using Automata.Types.General;
+using DeterministicAutomata.Types.Finite.Nondeterministic;
+using DeterministicAutomata.Types.General;
 
-namespace Automata.Automaton
+namespace DeterministicAutomata.Automaton.FiniteAutomaton
 {
-    public class NondeterministicFiniteAutomaton : FiniteAutomaton
+    public class NondeterministicFiniteAutomaton : BasicAutomaton
     {
-        public NondeterministicFiniteAutomaton(HashSet<State> states, Alphabet inputAlphabet, NondeterministicTransitionFunction transitionFunction, State initialState, HashSet<State> acceptStates)
+        public NondeterministicFiniteAutomaton(HashSet<State> states, Alphabet inputAlphabet, NondeterministicFiniteTransitionFunction transitionFunction, State initialState, HashSet<State> acceptStates)
             : base(states, inputAlphabet, initialState, acceptStates)
             => TransitionFunction = transitionFunction;
 
-        public NondeterministicTransitionFunction TransitionFunction { get; }
+        public NondeterministicFiniteTransitionFunction TransitionFunction { get; }
 
         public override bool Accepts(Word word)
         {
