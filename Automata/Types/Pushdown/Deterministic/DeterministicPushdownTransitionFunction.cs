@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using Automata.Types.Pushdown;
 using DeterministicAutomata.Types.General;
 
 namespace DeterministicAutomata.Types.Pushdown.Deterministic
@@ -17,7 +19,11 @@ namespace DeterministicAutomata.Types.Pushdown.Deterministic
         public override int GetHashCode()
             => PartialTransitionFunctions != null ? PartialTransitionFunctions.GetHashCode() : 0;
 
-        public (State, Symbol)? GetNextState(State currentState, Symbol readSymbol)
-            => PartialTransitionFunctions.FirstOrDefault(function => function.InputState.Equals(currentState) && function.InputStackSymbol.Equals(readSymbol))?.GetResultState();
+        public PushdownConfiguration GetNextConfiguration(PushdownConfiguration currentConfiguration, Symbol inputSymbol)
+            => throw new NotImplementedException();
+
+        public (State, Symbol)? GetNextState(State currentState, Symbol inputSymbol, Symbol inputStackSymbol)
+            => PartialTransitionFunctions.FirstOrDefault(function
+                => function.InputState.Equals(currentState) && function.InputStackSymbol.Equals(inputStackSymbol) && function.InputSymbol.Equals(inputSymbol))?.GetResultState();
     }
 }

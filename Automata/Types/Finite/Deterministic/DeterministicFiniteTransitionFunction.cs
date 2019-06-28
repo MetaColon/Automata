@@ -21,7 +21,10 @@ namespace DeterministicAutomata.Types.Finite.Deterministic
         public override int GetHashCode()
             => PartialTransitionFunctions != null ? PartialTransitionFunctions.GetHashCode() : 0;
 
-        public State GetNextState(State currentState, Symbol inputSymbol)
+        public FiniteConfiguration GetNextConfiguration (FiniteConfiguration currentConfiguration)
+            => new FiniteConfiguration(GetNextState(currentConfiguration.State, currentConfiguration.LeftSymbols.Peek()), currentConfiguration.LeftSymbols.SkipNext());
+
+        private State GetNextState(State currentState, Symbol inputSymbol)
             => PartialTransitionFunctions.FirstOrDefault(function => function.InputState.Equals(currentState) && function.InputSymbol.Equals(inputSymbol))?.GetResultState();
     }
 }

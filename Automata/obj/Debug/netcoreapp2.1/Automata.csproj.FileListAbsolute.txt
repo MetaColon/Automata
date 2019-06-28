@@ -1,0 +1,9 @@
+/home/metacolon/Documents/work/Automata/Automata/bin/Debug/netcoreapp2.1/Automata.deps.json
+/home/metacolon/Documents/work/Automata/Automata/bin/Debug/netcoreapp2.1/Automata.dll
+/home/metacolon/Documents/work/Automata/Automata/bin/Debug/netcoreapp2.1/Automata.pdb
+/home/metacolon/Documents/work/Automata/Automata/obj/Debug/netcoreapp2.1/Automata.csprojAssemblyReference.cache
+/home/metacolon/Documents/work/Automata/Automata/obj/Debug/netcoreapp2.1/Automata.csproj.CoreCompileInputs.cache
+/home/metacolon/Documents/work/Automata/Automata/obj/Debug/netcoreapp2.1/Automata.AssemblyInfoInputs.cache
+/home/metacolon/Documents/work/Automata/Automata/obj/Debug/netcoreapp2.1/Automata.AssemblyInfo.cs
+/home/metacolon/Documents/work/Automata/Automata/obj/Debug/netcoreapp2.1/Automata.dll
+/home/metacolon/Documents/work/Automata/Automata/obj/Debug/netcoreapp2.1/Automata.pdb

@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using Automata.Types;
+using DeterministicAutomata.Types.Finite;
 using DeterministicAutomata.Types.Finite.Deterministic;
 using DeterministicAutomata.Types.General;
 
@@ -15,16 +17,12 @@ namespace DeterministicAutomata.Automaton.FiniteAutomaton
 
         public override bool Accepts(Word word)
         {
-            var currentState = InitialState;
-            foreach (var inputSymbol in word.InputSymbols)
-            {
-                if (currentState == null)
-                    return false;
+            var currentConfiguration = new FiniteConfiguration(InitialState, word);
 
-                currentState = TransitionFunction.GetNextState(currentState, inputSymbol);
-            }
+            while (currentConfiguration != null && !currentConfiguration.Done())
+                currentConfiguration = TransitionFunction.GetNextConfiguration(currentConfiguration);
 
-            return AcceptStates.Any(state => state.Equals(currentState));
+            return currentConfiguration != null && currentConfiguration.Accepted(AcceptStates);
         }
 
         public override bool Equals(object obj)

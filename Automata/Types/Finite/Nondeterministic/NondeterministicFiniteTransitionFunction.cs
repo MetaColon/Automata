@@ -21,6 +21,7 @@ namespace DeterministicAutomata.Types.Finite.Nondeterministic
             => PartialTransitionFunctions != null ? PartialTransitionFunctions.GetHashCode() : 0;
 
         public HashSet<State> GetNextStates(State currentState, Symbol inputSymbol)
-            => PartialTransitionFunctions.FirstOrDefault(function => function.InputState.Equals(currentState) && function.InputSymbol.Equals(inputSymbol))?.GetResultStates() ?? new HashSet<State>();
+            => PartialTransitionFunctions.FirstOrDefault(function
+                   => function.InputState.Equals(currentState) && function.InputSymbol.Equals(inputSymbol))?.GetResultStates() ?? new HashSet<State>();
     }
 }
