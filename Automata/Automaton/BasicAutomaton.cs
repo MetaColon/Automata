@@ -1,7 +1,9 @@
 using System.Collections.Generic;
-using DeterministicAutomata.Types.General;
 
-namespace DeterministicAutomata.Automaton
+using Automata.Types.General;
+
+
+namespace Automata.Automaton
 {
     public abstract class BasicAutomaton : Automaton
     {

@@ -1,4 +1,4 @@
-namespace DeterministicAutomata.Types.Finite
+namespace Automata.Types.Finite
 {
     public abstract class FiniteTransitionFunction
     {

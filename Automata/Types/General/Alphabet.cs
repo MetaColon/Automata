@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 
-namespace DeterministicAutomata.Types.General
+
+namespace Automata.Types.General
 {
     public class Alphabet
     {

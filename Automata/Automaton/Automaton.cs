@@ -1,7 +1,7 @@
-using DeterministicAutomata.Types;
-using DeterministicAutomata.Types.General;
+using Automata.Types.General;
 
-namespace DeterministicAutomata.Automaton
+
+namespace Automata.Automaton
 {
     public interface Automaton
     {

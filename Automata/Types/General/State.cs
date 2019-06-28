@@ -1,4 +1,4 @@
-namespace DeterministicAutomata.Types.General
+namespace Automata.Types.General
 {
     public class State
     {

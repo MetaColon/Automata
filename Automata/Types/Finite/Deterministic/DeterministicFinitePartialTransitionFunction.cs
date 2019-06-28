@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
-using DeterministicAutomata.Types.General;
 
-namespace DeterministicAutomata.Types.Finite.Deterministic
+using Automata.Types.General;
+
+
+namespace Automata.Types.Finite.Deterministic
 {
     public class DeterministicFinitePartialTransitionFunction : FinitePartialTransitionFunction
     {

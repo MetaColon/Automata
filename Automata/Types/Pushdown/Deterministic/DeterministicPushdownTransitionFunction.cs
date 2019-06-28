@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Automata.Types.Pushdown;
-using DeterministicAutomata.Types.General;
 
-namespace DeterministicAutomata.Types.Pushdown.Deterministic
+using Automata.Types.General;
+
+
+namespace Automata.Types.Pushdown.Deterministic
 {
     public class DeterministicPushdownTransitionFunction : PushdownTransitionFunction
     {

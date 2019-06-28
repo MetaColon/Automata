@@ -1,8 +1,7 @@
-using System.Collections.Generic;
-using Automata.Types;
-using DeterministicAutomata.Types.General;
+using Automata.Types.General;
 
-namespace DeterministicAutomata.Types.Finite
+
+namespace Automata.Types.Finite
 {
     public class FiniteConfiguration : Configuration
     {

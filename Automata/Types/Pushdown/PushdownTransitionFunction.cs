@@ -1,4 +1,4 @@
-namespace DeterministicAutomata.Types.Pushdown
+namespace Automata.Types.Pushdown
 {
     public abstract class PushdownTransitionFunction
     {

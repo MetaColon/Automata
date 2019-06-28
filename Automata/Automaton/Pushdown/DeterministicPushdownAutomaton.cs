@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
-using DeterministicAutomata.Automaton;
-using DeterministicAutomata.Types.General;
-using DeterministicAutomata.Types.Pushdown;
-using DeterministicAutomata.Types.Pushdown.Deterministic;
+
+using Automata.Types.General;
+using Automata.Types.Pushdown;
+using Automata.Types.Pushdown.Deterministic;
+
 
 namespace Automata.Automaton.Pushdown
 {

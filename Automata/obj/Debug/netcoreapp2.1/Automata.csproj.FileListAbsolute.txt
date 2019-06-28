@@ -7,3 +7,12 @@
 /home/metacolon/Documents/work/Automata/Automata/obj/Debug/netcoreapp2.1/Automata.AssemblyInfo.cs
 /home/metacolon/Documents/work/Automata/Automata/obj/Debug/netcoreapp2.1/Automata.dll
 /home/metacolon/Documents/work/Automata/Automata/obj/Debug/netcoreapp2.1/Automata.pdb
+D:\Documents\Studium\automata\Automata\bin\Debug\netcoreapp2.1\Automata.deps.json
+D:\Documents\Studium\automata\Automata\bin\Debug\netcoreapp2.1\Automata.dll
+D:\Documents\Studium\automata\Automata\bin\Debug\netcoreapp2.1\Automata.pdb
+D:\Documents\Studium\automata\Automata\obj\Debug\netcoreapp2.1\Automata.csprojAssemblyReference.cache
+D:\Documents\Studium\automata\Automata\obj\Debug\netcoreapp2.1\Automata.csproj.CoreCompileInputs.cache
+D:\Documents\Studium\automata\Automata\obj\Debug\netcoreapp2.1\Automata.AssemblyInfoInputs.cache
+D:\Documents\Studium\automata\Automata\obj\Debug\netcoreapp2.1\Automata.AssemblyInfo.cs
+D:\Documents\Studium\automata\Automata\obj\Debug\netcoreapp2.1\Automata.dll
+D:\Documents\Studium\automata\Automata\obj\Debug\netcoreapp2.1\Automata.pdb

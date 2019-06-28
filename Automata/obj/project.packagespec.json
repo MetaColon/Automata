@@ -1,18 +1,19 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/metacolon/Documents/work/Automata/Automata/Automata.csproj",
+    "projectUniqueName": "D:\\Documents\\Studium\\automata\\Automata\\Automata.csproj",
     "projectName": "Automata",
-    "projectPath": "/home/metacolon/Documents/work/Automata/Automata/Automata.csproj",
-    "outputPath": "/home/metacolon/Documents/work/Automata/Automata/obj/",
+    "projectPath": "D:\\Documents\\Studium\\automata\\Automata\\Automata.csproj",
+    "outputPath": "D:\\Documents\\Studium\\automata\\Automata\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
       "netcoreapp2.1"
     ],
     "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
       "https://api.nuget.org/v3/index.json": {}
     },
     "frameworks": {

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
-using DeterministicAutomata.Types.General;
-using DeterministicAutomata.Types.Pushdown;
+
+using Automata.Types.General;
+
 
 namespace Automata.Types.Pushdown
 {

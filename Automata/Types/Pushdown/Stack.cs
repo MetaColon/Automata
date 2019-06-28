@@ -1,7 +1,9 @@
 using System.Collections.Generic;
-using DeterministicAutomata.Types.General;
 
-namespace DeterministicAutomata.Types.Pushdown
+using Automata.Types.General;
+
+
+namespace Automata.Types.Pushdown
 {
     public class Stack
     {

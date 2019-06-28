@@ -1,7 +1,9 @@
 using System.Collections.Generic;
-using DeterministicAutomata.Types.General;
 
-namespace DeterministicAutomata.Types.Finite.Nondeterministic
+using Automata.Types.General;
+
+
+namespace Automata.Types.Finite.Nondeterministic
 {
     public class NondeterministicFinitePartialTransitionFunction : FinitePartialTransitionFunction
     {

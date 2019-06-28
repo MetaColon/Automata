@@ -1,9 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/metacolon/.dotnet/store/|arch|/|tfm|",
-      "/home/metacolon/.nuget/packages",
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Users\\Meta Colon\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Meta Colon\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }
 }

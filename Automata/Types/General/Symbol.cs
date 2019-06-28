@@ -1,4 +1,4 @@
-namespace DeterministicAutomata.Types.General
+namespace Automata.Types.General
 {
     public class Symbol
     {
@@ -25,6 +25,9 @@ namespace DeterministicAutomata.Types.General
             }
         }
 
-        public static Symbol EPSILON = new Symbol("Epsilon", true);
+        public static Symbol EPSILON = new Symbol("ε", true);
+
+        /// <inheritdoc />
+        public override string ToString () => Value;
     }
 }

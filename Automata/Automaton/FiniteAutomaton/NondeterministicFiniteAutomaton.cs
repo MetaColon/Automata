@@ -1,52 +1,46 @@
 using System.Collections.Generic;
 using System.Linq;
-using DeterministicAutomata.Types.Finite.Nondeterministic;
-using DeterministicAutomata.Types.General;
 
-namespace DeterministicAutomata.Automaton.FiniteAutomaton
+using Automata.Types.Finite;
+using Automata.Types.Finite.Nondeterministic;
+using Automata.Types.General;
+
+
+namespace Automata.Automaton.FiniteAutomaton
 {
     public class NondeterministicFiniteAutomaton : BasicAutomaton
     {
-        public NondeterministicFiniteAutomaton(HashSet<State> states, Alphabet inputAlphabet, NondeterministicFiniteTransitionFunction transitionFunction, State initialState, HashSet<State> acceptStates)
-            : base(states, inputAlphabet, initialState, acceptStates)
+        public NondeterministicFiniteAutomaton (HashSet <State> states, Alphabet inputAlphabet, NondeterministicFiniteTransitionFunction transitionFunction, State initialState, HashSet <State> acceptStates)
+            : base (states, inputAlphabet, initialState, acceptStates)
             => TransitionFunction = transitionFunction;
 
         public NondeterministicFiniteTransitionFunction TransitionFunction { get; }
 
-        public override bool Accepts(Word word)
+        public override bool Accepts (Word word)
         {
-            var currentStates = new HashSet<State> {InitialState};
-            foreach (var inputSymbol in word.InputSymbols)
-            {
-                var newStates = new HashSet<State>();
-                foreach (var state in currentStates)
-                {
-                    var resultStates = TransitionFunction.GetNextStates(state, inputSymbol);
-                    foreach (var resultState in resultStates)
-                        newStates.Add(resultState);
-                }
+            var currentConfigurations = new HashSet <FiniteConfiguration> {new FiniteConfiguration (InitialState, word)};
 
-                currentStates = newStates;
-            }
+            while (currentConfigurations.Count > 0 && currentConfigurations.Any (configuration => !configuration.Done ()) && currentConfigurations.All (configuration => !configuration.Accepted (AcceptStates)))
+                currentConfigurations = currentConfigurations.SelectMany (configuration => TransitionFunction.GetNextConfigurations (configuration)).ToHashSet ();
 
-            return AcceptStates.Any(accept => currentStates.Any(accept.Equals));
+            return currentConfigurations.Any (configuration => configuration.Accepted (AcceptStates));
         }
 
-        public override bool Equals(object obj)
-            => obj is NondeterministicFiniteAutomaton finiteAutomaton && Equals(finiteAutomaton);
+        public override bool Equals (object obj)
+            => obj is NondeterministicFiniteAutomaton finiteAutomaton && Equals (finiteAutomaton);
 
-        protected bool Equals(NondeterministicFiniteAutomaton other)
-            => Equals(TransitionFunction, other.TransitionFunction) && base.Equals(other);
+        protected bool Equals (NondeterministicFiniteAutomaton other)
+            => Equals (TransitionFunction, other.TransitionFunction) && base.Equals (other);
 
-        public override int GetHashCode()
+        public override int GetHashCode ()
         {
             unchecked
             {
-                var hashCode = States != null ? States.GetHashCode() : 0;
-                hashCode = (hashCode * 397) ^ (InputAlphabet != null ? InputAlphabet.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (TransitionFunction != null ? TransitionFunction.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (InitialState != null ? InitialState.GetHashCode() : 0);
-                hashCode = (hashCode * 397) ^ (AcceptStates != null ? AcceptStates.GetHashCode() : 0);
+                var hashCode = States != null ? States.GetHashCode () : 0;
+                hashCode = (hashCode * 397) ^ (InputAlphabet != null ? InputAlphabet.GetHashCode () : 0);
+                hashCode = (hashCode * 397) ^ (TransitionFunction != null ? TransitionFunction.GetHashCode () : 0);
+                hashCode = (hashCode * 397) ^ (InitialState != null ? InitialState.GetHashCode () : 0);
+                hashCode = (hashCode * 397) ^ (AcceptStates != null ? AcceptStates.GetHashCode () : 0);
                 return hashCode;
             }
         }
