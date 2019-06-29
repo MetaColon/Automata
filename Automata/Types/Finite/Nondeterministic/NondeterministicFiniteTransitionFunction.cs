@@ -23,7 +23,7 @@ namespace Automata.Types.Finite.Nondeterministic
             => PartialTransitionFunctions != null ? PartialTransitionFunctions.GetHashCode () : 0;
 
         public HashSet <FiniteConfiguration> GetNextConfigurations (FiniteConfiguration currentConfiguration)
-            => GetNextStates (currentConfiguration.State, currentConfiguration.LeftSymbols.Peek ()).Select (state => new FiniteConfiguration (state, currentConfiguration.LeftSymbols.SkipNext ())).Union (
+            => GetNextStates (currentConfiguration.State, currentConfiguration.LeftSymbols.Peek ()).Select (state => new FiniteConfiguration (state, currentConfiguration.LeftSymbols.SkipNext ())).Concat (
                 GetNextStates (currentConfiguration.State, Symbol.EPSILON).Select (state => new FiniteConfiguration (state, currentConfiguration.LeftSymbols))).ToHashSet ();
 
         private HashSet <State> GetNextStates (State currentState, Symbol inputSymbol)

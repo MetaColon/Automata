@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using Automata.Types.General;
 using Automata.Types.Pushdown;
@@ -10,27 +11,52 @@ namespace Automata.Automaton.Pushdown
 {
     public class DeterministicPushdownAutomaton : BasicAutomaton
     {
-        public DeterministicPushdownAutomaton(HashSet<State> states, Alphabet inputAlphabet, State initialState, HashSet<State> acceptStates, DeterministicPushdownTransitionFunction transitionFunction, Stack stack)
-            : base(states, inputAlphabet, initialState, acceptStates)
+        public DeterministicPushdownAutomaton (HashSet <State> states, Alphabet inputAlphabet, State initialState, HashSet <State> acceptStates, DeterministicPushdownTransitionFunction transitionFunction, Symbol initialStackSymbol, Alphabet stackAlphabet)
+            : base (states, inputAlphabet, initialState, acceptStates)
         {
             TransitionFunction = transitionFunction;
-            Stack = stack;
+            InitialStackSymbol = initialStackSymbol;
+            StackAlphabet      = stackAlphabet;
         }
 
         public DeterministicPushdownTransitionFunction TransitionFunction { get; }
-        public Stack Stack { get; }
+        public Symbol                                  InitialStackSymbol { get; }
+        public Alphabet                                StackAlphabet      { get; }
 
-        public override bool Accepts(Word word)
+        public override bool Accepts (Word word)
         {
-            var currentState = InitialState;
-            var currentSymbol = Stack.Pop();
+            var passedConfigurations = new HashSet <PushdownConfiguration> ();
+            var currentConfiguration = new PushdownConfiguration (InitialState, new Stack (InitialStackSymbol), word);
 
-            throw new NotImplementedException();
+            // Stop when no next configuration could be found, the current configuration has read all it's input or the exact same configuration already occurred (meaning that the automaton is looping)
+            while (currentConfiguration != null &&
+                   (!currentConfiguration.Done () || !currentConfiguration.Accepted (AcceptStates)) &&
+                   !passedConfigurations.Any (configuration => configuration.Equals (currentConfiguration)))
+            {
+                passedConfigurations.Add (currentConfiguration);
+                currentConfiguration = TransitionFunction.GetNextConfiguration (currentConfiguration);
+            }
+
+            return (currentConfiguration?.Done () ?? false) && currentConfiguration.Accepted (AcceptStates);
         }
 
-        public override int GetHashCode()
+        /// <inheritdoc />
+        public override bool Equals (object obj)
+            => obj is DeterministicPushdownAutomaton automaton && Equals (automaton);
+
+        /// <inheritdoc />
+        public override int GetHashCode ()
         {
-            throw new System.NotImplementedException();
+            unchecked
+            {
+                var hashCode = (TransitionFunction != null ? TransitionFunction.GetHashCode () : 0);
+                hashCode = (hashCode * 397) ^ (InitialStackSymbol != null ? InitialStackSymbol.GetHashCode () : 0);
+                hashCode = (hashCode * 397) ^ (StackAlphabet != null ? StackAlphabet.GetHashCode () : 0);
+                return hashCode;
+            }
         }
+
+        protected bool Equals (DeterministicPushdownAutomaton other)
+            => base.Equals (other) && Equals (TransitionFunction, other.TransitionFunction) && Equals (InitialStackSymbol, other.InitialStackSymbol) && Equals (StackAlphabet, other.StackAlphabet);
     }
 }

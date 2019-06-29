@@ -8,12 +8,10 @@ namespace Automata.Types.Pushdown.Deterministic
 {
     public class DeterministicPushdownPartialTransitionFunction : PushdownPartialTransitionFunction
     {
-        public DeterministicPushdownPartialTransitionFunction(State inputState, Symbol inputSymbol, Symbol inputStackSymbol, HashSet<(State, Symbol)> resultStates)
-            : base(inputState, inputSymbol, inputStackSymbol, resultStates)
-        {
-        }
+        public DeterministicPushdownPartialTransitionFunction (State inputState, Symbol inputSymbol, Symbol inputStackSymbol, (State, Symbol) resultState)
+            : base (inputState, inputSymbol, inputStackSymbol, new HashSet <(State, Symbol)> {resultState}) {}
 
-        public (State, Symbol) GetResultState()
-            => ResultStates.FirstOrDefault();
+        public (State, Symbol) GetResultState ()
+            => ResultStates.FirstOrDefault ();
     }
 }

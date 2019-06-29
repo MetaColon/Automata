@@ -11,6 +11,7 @@ using NUnit.Framework;
 
 namespace Tests.Automaton
 {
+    // TODO: Implement more test cases, especially for loop detection
     public class DeterministicFiniteAutomatonTests
     {
         private Random Random = new Random ();

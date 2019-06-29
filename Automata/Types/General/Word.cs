@@ -41,15 +41,18 @@ namespace Automata.Types.General
         }
 
         public Symbol Peek ()
-            => InputSymbols.TryPeek (out var symbol) ? symbol : null;
+            => InputSymbols.TryPeek (out var symbol) ? symbol : Symbol.EPSILON;
 
         public Word SkipNext ()
             => new Word (InputSymbols.Count > 0 ? new Queue <Symbol> (InputSymbols.Skip (1)) : new Queue <Symbol> ());
+
+        public Word Clone ()
+            => new Word (new Queue <Symbol> (InputSymbols));
 
         public int Count ()
             => InputSymbols.Count;
 
         /// <inheritdoc />
-        public override string ToString () => string.Join("•", InputSymbols);
+        public override string ToString () => string.Join ("•", InputSymbols);
     }
 }
