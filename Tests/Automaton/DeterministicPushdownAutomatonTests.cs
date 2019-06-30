@@ -54,7 +54,15 @@ namespace Tests.Automaton
                 new DeterministicPushdownPartialTransitionFunction (q4, Symbol.EPSILON, Symbol.EPSILON, (qr, Symbol.EPSILON)),
             });
 
-            var automaton = new DeterministicPushdownAutomaton (states, alphabet, q1, acceptStates, transitionFunction, Symbol.EPSILON, stackAlphabet);
+            // Accepts 0^n1^n
+            var automaton = new DeterministicPushdownAutomaton (
+                states,
+                alphabet,
+                q1,
+                acceptStates,
+                transitionFunction,
+                Symbol.EPSILON,
+                stackAlphabet);
 
             var negative = Word.Parse ("00001101", alphabet);
             var positive = Word.Parse ("00001111", alphabet);
@@ -65,10 +73,11 @@ namespace Tests.Automaton
             for (var i = 0; i < 50; i++)
             {
                 var startWith1 = Random.Next (2) == 1;
+                var initialCount = Random.Next (20);
                 var randomNegative1 = string.Join ("",
-                                                   Enumerable.Repeat (startWith1 ? 1 : 0, Random.Next (20)).Concat (
-                                                       Enumerable.Repeat (startWith1 ? 0 : 1, Random.Next (20)).Concat (
-                                                           Enumerable.Repeat (startWith1 ? 1 : 0, Random.Next (20)))));
+                                                   Enumerable.Repeat (startWith1 ? 1 : 0, initialCount).Concat (
+                                                       Enumerable.Repeat (startWith1 ? 0 : 1, initialCount).Concat (
+                                                           Enumerable.Repeat (startWith1 ? 1 : 0, Random.Next (1, 20)))));
                 var randomNegative2 = string.Join ("",
                                                    Enumerable.Repeat (0, Random.Next (20)).Concat (
                                                        Enumerable.Repeat (1, Random.Next (20, 40))));
@@ -76,8 +85,8 @@ namespace Tests.Automaton
                 var positiveCount  = Random.Next (20);
                 var randomPositive = string.Join ("", Enumerable.Repeat (0, positiveCount).Concat (Enumerable.Repeat (1, positiveCount)));
 
-                Assert.False (automaton.Accepts (Word.Parse (randomNegative1, alphabet)));
-                Assert.False (automaton.Accepts (Word.Parse (randomNegative2, alphabet)));
+                Assert.False (automaton.Accepts (Word.Parse (randomNegative1, alphabet)), $"The automaton should not have recognized '{randomNegative1}'");
+                Assert.False (automaton.Accepts (Word.Parse (randomNegative2, alphabet)), $"The automaton should not have recognized '{randomNegative2}'");
                 Assert.True (automaton.Accepts (Word.Parse (randomPositive, alphabet)), $"The automaton should have recognized '{randomPositive}'");
             }
         }

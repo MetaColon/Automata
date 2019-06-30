@@ -17,10 +17,13 @@
           <e p="BasicAutomaton.cs" t="Include" />
           <e p="FiniteAutomaton" t="Include">
             <e p="DeterministicFiniteAutomaton.cs" t="Include" />
+            <e p="FiniteAutomaton.cs" t="Include" />
             <e p="NondeterministicFiniteAutomaton.cs" t="Include" />
           </e>
           <e p="Pushdown" t="Include">
             <e p="DeterministicPushdownAutomaton.cs" t="Include" />
+            <e p="NondeterministicPushdownAutomaton.cs" t="Include" />
+            <e p="PushdownAutomaton.cs" t="Include" />
           </e>
         </e>
         <e p="bin" t="ExcludeRecursive" />
@@ -57,6 +60,10 @@
               <e p="DeterministicPushdownPartialTransitionFunction.cs" t="Include" />
               <e p="DeterministicPushdownTransitionFunction.cs" t="Include" />
             </e>
+            <e p="Nondeterministic" t="Include">
+              <e p="NondeterministicPushdownPartialTransitionFunction.cs" t="Include" />
+              <e p="NondeterministicPushdownTransitionFunction.cs" t="Include" />
+            </e>
             <e p="PushdownConfiguration.cs" t="Include" />
             <e p="PushdownPartialTransitionFunction.cs" t="Include" />
             <e p="PushdownTransitionFunction.cs" t="Include" />
@@ -71,6 +78,7 @@
           <e p="DeterministicFiniteAutomatonTests.cs" t="Include" />
           <e p="DeterministicPushdownAutomatonTests.cs" t="Include" />
           <e p="NondeterministicFiniteAutomatonTests.cs" t="Include" />
+          <e p="NondeterministicPushdownAutomatonTests.cs" t="Include" />
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">

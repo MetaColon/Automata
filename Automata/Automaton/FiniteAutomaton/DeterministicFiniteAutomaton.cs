@@ -7,7 +7,7 @@ using Automata.Types.General;
 
 namespace Automata.Automaton.FiniteAutomaton
 {
-    public class DeterministicFiniteAutomaton : BasicAutomaton
+    public class DeterministicFiniteAutomaton : FiniteAutomaton
     {
         public DeterministicFiniteAutomaton (HashSet <State> states, Alphabet inputAlphabet, DeterministicFiniteTransitionFunction transitionFunction, State initialState, HashSet <State> acceptStates)
             : base (states, inputAlphabet, initialState, acceptStates)

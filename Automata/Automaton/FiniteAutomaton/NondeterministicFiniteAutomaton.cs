@@ -8,7 +8,7 @@ using Automata.Types.General;
 
 namespace Automata.Automaton.FiniteAutomaton
 {
-    public class NondeterministicFiniteAutomaton : BasicAutomaton
+    public class NondeterministicFiniteAutomaton : FiniteAutomaton
     {
         public NondeterministicFiniteAutomaton (HashSet <State> states, Alphabet inputAlphabet, NondeterministicFiniteTransitionFunction transitionFunction, State initialState, HashSet <State> acceptStates)
             : base (states, inputAlphabet, initialState, acceptStates)

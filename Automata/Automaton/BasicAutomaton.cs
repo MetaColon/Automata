@@ -23,6 +23,19 @@ namespace Automata.Automaton
         public override bool Equals (object obj)
             => obj is BasicAutomaton finiteAutomaton && Equals (finiteAutomaton);
 
+        /// <inheritdoc />
+        public override int GetHashCode ()
+        {
+            unchecked
+            {
+                var hashCode = (States != null ? States.GetHashCode () : 0);
+                hashCode = (hashCode * 397) ^ (InputAlphabet != null ? InputAlphabet.GetHashCode () : 0);
+                hashCode = (hashCode * 397) ^ (InitialState != null ? InitialState.GetHashCode () : 0);
+                hashCode = (hashCode * 397) ^ (AcceptStates != null ? AcceptStates.GetHashCode () : 0);
+                return hashCode;
+            }
+        }
+
         protected bool Equals (BasicAutomaton other)
             => Equals (States, other.States) &&
                Equals (InputAlphabet, other.InputAlphabet) &&
@@ -30,6 +43,5 @@ namespace Automata.Automaton
                Equals (AcceptStates, other.AcceptStates);
 
         public abstract          bool Accepts (Word word);
-        public abstract override int  GetHashCode ();
     }
 }

@@ -22,5 +22,9 @@ namespace Automata.Types.Pushdown
         /// <inheritdoc />
         public override int GetHashCode ()
             => Stack != null ? Stack.GetHashCode () : 0;
+
+        /// <inheritdoc />
+        public override string ToString ()
+            => $"State: {State}; Stack: {Stack}; LeftSymbols: {LeftSymbols}";
     }
 }

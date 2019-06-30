@@ -5,29 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae9b2125-e0a8-4932-910e-f5675fcaf9bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Automata/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/Automaton/DeterministicPushdownAutomatonTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/FiniteAutomaton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automata/Automaton/Pushdown/NondeterministicPushdownAutomaton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automata/Automaton/Pushdown/PushdownAutomaton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automata/Types/Pushdown/Nondeterministic/NondeterministicPushdownPartialTransitionFunction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Automata/Types/Pushdown/Nondeterministic/NondeterministicPushdownTransitionFunction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Automaton/NondeterministicPushdownAutomatonTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Automata/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Automata/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Automata/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Automata/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Automata/Automaton/BasicAutomaton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Automaton/BasicAutomaton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/DeterministicFiniteAutomaton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/DeterministicFiniteAutomaton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/NondeterministicFiniteAutomaton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/NondeterministicFiniteAutomaton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Automata/Automaton/Pushdown/DeterministicPushdownAutomaton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Automaton/Pushdown/DeterministicPushdownAutomaton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automata/Types/Configuration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Types/Configuration.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automata/Types/Finite/Nondeterministic/NondeterministicFiniteTransitionFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Types/Finite/Nondeterministic/NondeterministicFiniteTransitionFunction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automata/Types/General/Word.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Types/General/Word.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automata/Types/General/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Types/General/State.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownPartialTransitionFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownPartialTransitionFunction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownTransitionFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownTransitionFunction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Automata/Types/Pushdown/PushdownConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Types/Pushdown/PushdownConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automata/Types/Pushdown/PushdownPartialTransitionFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Types/Pushdown/PushdownPartialTransitionFunction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Automata/Types/Pushdown/Stack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/Types/Pushdown/Stack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Automata/bin/Debug/netcoreapp2.1/Automata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/bin/Debug/netcoreapp2.1/Automata.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Automata/bin/Debug/netcoreapp2.1/Automata.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/bin/Debug/netcoreapp2.1/Automata.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Automata/obj/Debug/netcoreapp2.1/Automata.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/obj/Debug/netcoreapp2.1/Automata.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Automata/obj/Debug/netcoreapp2.1/Automata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/obj/Debug/netcoreapp2.1/Automata.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Automata/obj/Debug/netcoreapp2.1/Automata.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Automata/obj/Debug/netcoreapp2.1/Automata.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Automaton/DeterministicPushdownAutomatonTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Automaton/DeterministicPushdownAutomatonTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.1/Automata.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.1/Automata.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.1/Automata.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.1/Automata.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.1/Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.1/Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.1/Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.1/Tests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/bin/Debug/netcoreapp2.1/nunit_random_seed.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.1/Tests.Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.1/Tests.Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.1/Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.1/Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.1/Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.1/Tests.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.1/Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/obj/Debug/netcoreapp2.1/Tests.dll" afterDir="false" />
@@ -55,38 +60,131 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Tests/Automaton/DeterministicPushdownAutomatonTests.cs">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/Automaton/NondeterministicPushdownAutomatonTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+            <state relative-caret-position="803">
+              <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
               <folding>
-                <marker date="1561850115625" expanded="true" signature="6:201" ph="..." />
-                <marker date="1561850115625" expanded="true" signature="229:4393" ph="{...}" />
-                <marker date="1561850115625" expanded="true" signature="284:4391" ph="{...}" />
-                <marker date="1561850115625" expanded="true" signature="389:4385" ph="{...}" />
-                <marker date="1561850115625" expanded="true" signature="1356:2719" ph="{...}" />
-                <marker date="1561850115625" expanded="true" signature="3155:4375" ph="{...}" />
+                <marker date="1561916736106" expanded="true" signature="6:204" ph="..." />
+                <marker date="1561916736106" expanded="true" signature="232:5950" ph="{...}" />
+                <marker date="1561916736106" expanded="true" signature="290:5948" ph="{...}" />
+                <marker date="1561916736106" expanded="true" signature="394:5942" ph="{...}" />
+                <marker date="1561916736106" expanded="true" signature="1526:3050" ph="{...}" />
+                <marker date="1561916736106" expanded="true" signature="4033:5932" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/Automaton/DeterministicFiniteAutomatonTests.cs">
+        <entry file="file://$PROJECT_DIR$/Automata/Automaton/Pushdown/NondeterministicPushdownAutomaton.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="15" selection-end-column="46" />
+            <state relative-caret-position="357">
+              <caret line="26" column="103" selection-start-line="26" selection-start-column="103" selection-end-line="26" selection-end-column="103" />
               <folding>
-                <marker date="1561761118372" expanded="true" signature="6:206" ph="..." />
-                <marker date="1561761118372" expanded="true" signature="234:4863" ph="{...}" />
-                <marker date="1561761118372" expanded="true" signature="287:4861" ph="{...}" />
-                <marker date="1561761118372" expanded="true" signature="395:2339" ph="{...}" />
-                <marker date="1561761118372" expanded="true" signature="909:1239" ph="{...}" />
-                <marker date="1561761118372" expanded="true" signature="1916:2329" ph="{...}" />
-                <marker date="1561761118372" expanded="true" signature="2395:4855" ph="{...}" />
-                <marker date="1561761118372" expanded="true" signature="3037:3829" ph="{...}" />
-                <marker date="1561761118372" expanded="true" signature="4372:4845" ph="{...}" />
+                <marker date="1561914394409" expanded="true" signature="6:162" ph="..." />
+                <marker date="1561914394409" expanded="true" signature="202:2308" ph="{...}" />
+                <marker date="1561914394409" expanded="true" signature="275:2306" ph="{...}" />
+                <marker date="1561914394409" expanded="true" signature="896:1740" ph="{...}" />
+                <marker date="1561914394409" expanded="true" signature="1303:1626" ph="{...}" />
+                <marker date="1561914394409" expanded="true" signature="2142:2300" ph="{...}" />
+                <marker date="1561914394409" expanded="true" signature="2174:2290" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Nondeterministic/NondeterministicPushdownTransitionFunction.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+              <folding>
+                <marker date="1561913999274" expanded="true" signature="6:142" ph="..." />
+                <marker date="1561913999274" expanded="true" signature="195:3983" ph="{...}" />
+                <marker date="1561913999274" expanded="true" signature="286:3981" ph="{...}" />
+                <marker date="1561913999274" expanded="true" signature="1465:3403" ph="{...}" />
+                <marker date="1561913999274" expanded="true" signature="2131:2500" ph="{...}" />
+                <marker date="1561913999274" expanded="true" signature="2545:2909" ph="{...}" />
+                <marker date="1561913999274" expanded="true" signature="2984:3353" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/PushdownConfiguration.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <folding>
+                <marker date="1561916657739" expanded="false" signature="6:64" ph="..." />
+                <marker date="1561916657739" expanded="true" signature="100:915" ph="{...}" />
+                <marker date="1561916657739" expanded="true" signature="157:913" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Automata/Types/General/State.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <folding>
+                <marker date="1561916657697" expanded="true" signature="32:559" ph="{...}" />
+                <marker date="1561916657697" expanded="true" signature="57:557" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Automata/Types/Configuration.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <folding>
+                <marker date="1561847461892" expanded="false" signature="6:83" ph="..." />
+                <marker date="1561847461892" expanded="true" signature="110:1182" ph="{...}" />
+                <marker date="1561847461892" expanded="true" signature="152:1180" ph="{...}" />
+                <marker date="1561847461892" expanded="true" signature="222:314" ph="{...}" />
+                <marker date="1561847461892" expanded="true" signature="972:1174" ph="{...}" />
+                <marker date="1561847461892" expanded="true" signature="1004:1164" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Stack.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="69" />
+              <folding>
+                <marker date="1561917255134" expanded="false" signature="6:83" ph="..." />
+                <marker date="1561917255134" expanded="true" signature="119:1749" ph="{...}" />
+                <marker date="1561917255134" expanded="true" signature="144:1747" ph="{...}" />
+                <marker date="1561917255134" expanded="true" signature="363:462" ph="{...}" />
+                <marker date="1561917255134" expanded="true" signature="941:1205" ph="{...}" />
+                <marker date="1561917255134" expanded="true" signature="1503:1626" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Automata/Types/General/Symbol.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+              <folding>
+                <marker date="1561759457047" expanded="true" signature="32:889" ph="{...}" />
+                <marker date="1561759457047" expanded="true" signature="58:887" ph="{...}" />
+                <marker date="1561759457047" expanded="true" signature="124:206" ph="{...}" />
+                <marker date="1561759457047" expanded="true" signature="567:737" ph="{...}" />
+                <marker date="1561759457047" expanded="true" signature="599:727" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -101,6 +199,8 @@
       <find>ResultStates</find>
       <find>.</find>
       <find>Union</find>
+      <find>•</find>
+      <find>new Stack &lt;Symbol&gt;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,9 +210,14 @@
     <setting file="file://$PROJECT_DIR$/Automata/Types/Finite/Nondeterministic/NondeterministicFiniteTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownPartialTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/Automaton/NondeterministicPushdownAutomatonTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Nondeterministic/NondeterministicPushdownTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/Finite/FiniteConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Nondeterministic/NondeterministicPushdownPartialTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/Finite/FiniteTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/Finite/FinitePartialTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Automata/Automaton/Pushdown/PushdownAutomaton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/FiniteAutomaton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/General/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/General/Symbol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/General/Word.cs" root0="FORCE_HIGHLIGHTING" />
@@ -121,22 +226,20 @@
     <setting file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Stack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/Pushdown/PushdownPartialTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Automaton/Pushdown/DeterministicPushdownAutomaton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Automata/Automaton/Pushdown/NondeterministicPushdownAutomaton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/DeterministicFiniteAutomaton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/NondeterministicFiniteAutomaton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tests/Automaton/NondeterministicFiniteAutomatonTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tests/Automaton/DeterministicFiniteAutomatonTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/Configuration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Automaton/BasicAutomaton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tests/Automaton/DeterministicPushdownAutomatonTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Automaton/Automaton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/obj/Debug/netcoreapp2.1/Automata.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/Finite/Deterministic/DeterministicFinitePartialTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/Finite/Deterministic/DeterministicFiniteTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Automata/Types/Finite/Nondeterministic/NondeterministicFinitePartialTransitionFunction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -163,31 +266,39 @@
         <option value="$PROJECT_DIR$/Automata/Types/Finite/Deterministic/DeterministicFinitePartialTransitionFunction.cs" />
         <option value="$PROJECT_DIR$/Automata/Types/Finite/Nondeterministic/NondeterministicFinitePartialTransitionFunction.cs" />
         <option value="$PROJECT_DIR$/Automata/Types/Pushdown/DeterministicPushdownTransitionFunction.cs" />
-        <option value="$PROJECT_DIR$/Automata/Types/Pushdown/PushdownPartialTransitionFunction.cs" />
         <option value="$PROJECT_DIR$/Automata/Types/Pushdown/PushdownTransitionFunction.cs" />
-        <option value="$PROJECT_DIR$/Automata/Automaton/Pushdown/PushdownAutomaton.cs" />
         <option value="$PROJECT_DIR$/Automata/Types/Finite/FiniteConfiguration.cs" />
-        <option value="$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/DeterministicFiniteAutomaton.cs" />
         <option value="$PROJECT_DIR$/Automata/Types/Finite/Deterministic/DeterministicFiniteTransitionFunction.cs" />
-        <option value="$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/NondeterministicFiniteAutomaton.cs" />
         <option value="$PROJECT_DIR$/Automata/Types/General/Symbol.cs" />
         <option value="$PROJECT_DIR$/Tests/Automaton/NondeterministicFiniteAutomatonTests.cs" />
         <option value="$PROJECT_DIR$/Automata/Types/General/Word.cs" />
-        <option value="$PROJECT_DIR$/Automata/Types/Pushdown/PushdownConfiguration.cs" />
         <option value="$PROJECT_DIR$/Automata/Types/Configuration.cs" />
-        <option value="$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownPartialTransitionFunction.cs" />
         <option value="$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownTransitionFunction.cs" />
-        <option value="$PROJECT_DIR$/Automata/Types/Pushdown/Stack.cs" />
-        <option value="$PROJECT_DIR$/Automata/Automaton/BasicAutomaton.cs" />
-        <option value="$PROJECT_DIR$/Automata/Automaton/Pushdown/DeterministicPushdownAutomaton.cs" />
         <option value="$PROJECT_DIR$/Tests/Automaton/DeterministicFiniteAutomatonTests.cs" />
-        <option value="$PROJECT_DIR$/Tests/Automaton/DeterministicPushdownAutomatonTests.cs" />
         <option value="$PROJECT_DIR$/Automata/Types/Finite/Nondeterministic/NondeterministicFiniteTransitionFunction.cs" />
+        <option value="$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/FiniteAutomaton.cs" />
+        <option value="$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/NondeterministicFiniteAutomaton.cs" />
+        <option value="$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/DeterministicFiniteAutomaton.cs" />
+        <option value="$PROJECT_DIR$/Automata/Automaton/BasicAutomaton.cs" />
+        <option value="$PROJECT_DIR$/Automata/Automaton/Pushdown/PushdownAutomaton.cs" />
+        <option value="$PROJECT_DIR$/Automata/Types/Pushdown/Nondeterministic/NondeterministicPushdownPartialTransitionFunction.cs" />
+        <option value="$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownPartialTransitionFunction.cs" />
+        <option value="$PROJECT_DIR$/Automata/Types/Pushdown/PushdownPartialTransitionFunction.cs" />
+        <option value="$PROJECT_DIR$/Automata/Types/Pushdown/Nondeterministic/NondeterministicPushdownTransitionFunction.cs" />
+        <option value="$PROJECT_DIR$/Automata/Automaton/Pushdown/DeterministicPushdownAutomaton.cs" />
+        <option value="$PROJECT_DIR$/Tests/Automaton/NondeterministicPushdownAutomatonTest.cs" />
+        <option value="$PROJECT_DIR$/Tests/Automaton/DeterministicPushdownAutomatonTests.cs" />
+        <option value="$PROJECT_DIR$/Automata/Types/Pushdown/PushdownConfiguration.cs" />
+        <option value="$PROJECT_DIR$/Automata/Types/General/State.cs" />
+        <option value="$PROJECT_DIR$/Tests/Automaton/NondeterministicPushdownAutomatonTests.cs" />
+        <option value="$PROJECT_DIR$/Automata/Automaton/Pushdown/NondeterministicPushdownAutomaton.cs" />
+        <option value="$PROJECT_DIR$/Automata/Types/Pushdown/Stack.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="30" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
     <option name="width" value="960" />
     <option name="height" value="1050" />
   </component>
@@ -200,56 +311,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="SolutionExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Automaton" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Automaton" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="FiniteAutomaton" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Automaton" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Pushdown" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Tests" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Automata" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Tests" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Automaton" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,6 +379,9 @@
       <workItem from="1561714600347" duration="2146000" />
       <workItem from="1561756791879" duration="4493000" />
       <workItem from="1561844510223" duration="5606000" />
+      <workItem from="1561912359355" duration="2950000" />
+      <workItem from="1561915336122" duration="722000" />
+      <workItem from="1561916124746" duration="1131000" />
     </task>
     <task id="LOCAL-00001" summary="NFA - not tested">
       <created>1561022482468</created>
@@ -346,7 +415,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22482000" />
+    <option name="totallyTimeSpent" value="27285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,13 +430,13 @@
     <frame x="-7" y="-7" width="2575" height="1424" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11844197" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08426073" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.30076924" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -379,7 +448,7 @@
       <window_info anchor="bottom" id="Unit Tests" order="12" sideWeight="0.49841017" weight="0.20384616" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50158983" side_tool="true" weight="0.25384617" />
-      <window_info anchor="bottom" id="Build" order="15" weight="0.3293348" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.32923076" />
       <window_info anchor="bottom" id="Statistic" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -408,6 +477,45 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tests/Automaton/NondeterministicPushdownAutomatonTests.cs</url>
+          <line>75</line>
+          <properties documentPath="$PROJECT_DIR$/Tests/Automaton/NondeterministicPushdownAutomatonTests.cs" initialLine="75">
+            <startOffsets>
+              <option value="3947" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3991" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Automata/Automaton/Pushdown/NondeterministicPushdownAutomaton.cs</url>
+          <line>25</line>
+          <properties documentPath="$PROJECT_DIR$/Automata/Automaton/Pushdown/NondeterministicPushdownAutomaton.cs" initialLine="25">
+            <startOffsets>
+              <option value="1158" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1303" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Automata/Automaton/Pushdown/NondeterministicPushdownAutomaton.cs</url>
+          <line>34</line>
+          <properties documentPath="$PROJECT_DIR$/Automata/Automaton/Pushdown/NondeterministicPushdownAutomaton.cs" initialLine="34">
+            <startOffsets>
+              <option value="1640" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1730" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -436,6 +544,36 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>currentConfigurations.ToList ()[3].Stack</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>currentConfigurations.ToList ()[3].Stack.Push(new Symbol(&quot;a&quot;))</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>currentConfigurations.ToList ()[3].Stack.Peek()</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>currentConfigurations.ToList()</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>currentConfigurations[3].Stack</expression-string>
+        <language-id>C#</language-id>
+        <custom-info>RiderImportsList:</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>string.Join (&quot;&quot;,
                                                    Enumerable.Repeat (0, Random.Next (20)).Union (
                                                        Enumerable.Repeat (1, Random.Next (20, 40))))</expression-string>
@@ -457,24 +595,6 @@
       </expression>
       <expression>
         <expression-string>Random.Next (20)</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>unknown.InputSymbols.Peek()</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>unknown.InputSymbols.ToArray ()</expression-string>
-        <language-id>C#</language-id>
-        <custom-info>RiderImportsList:</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>currentConfiguration.LeftSymbols.Peek()</expression-string>
         <language-id>C#</language-id>
         <custom-info>RiderImportsList:</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -504,29 +624,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/PushdownPartialTransitionFunction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Automata/Types/Finite/FiniteTransitionFunction.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/PushdownTransitionFunction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Automata/Types/General/State.cs">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Automata/Types/Finite/Nondeterministic/NondeterministicFinitePartialTransitionFunction.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -554,28 +657,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/DeterministicFiniteAutomaton.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
-          <folding>
-            <marker date="1561757565751" expanded="true" signature="6:136" ph="..." />
-            <marker date="1561757565751" expanded="true" signature="183:2070" ph="{...}" />
-            <marker date="1561757565751" expanded="true" signature="248:2068" ph="{...}" />
-            <marker date="1561757565751" expanded="true" signature="714:1103" ph="{...}" />
-            <marker date="1561757565751" expanded="true" signature="1454:2062" ph="{...}" />
-            <marker date="1561757565751" expanded="true" signature="1486:2052" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/Automaton/NondeterministicFiniteAutomatonTests.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
           <caret line="86" column="36" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
           <folding>
             <marker date="1561760856445" expanded="true" signature="6:209" ph="..." />
-            <marker date="1561760856445" expanded="true" signature="237:4660" ph="{...}" />
             <marker date="1561760856445" expanded="true" signature="293:4658" ph="{...}" />
             <marker date="1561760856445" expanded="true" signature="399:2363" ph="{...}" />
             <marker date="1561760856445" expanded="true" signature="852:1282" ph="{...}" />
@@ -583,19 +670,6 @@
             <marker date="1561760856445" expanded="true" signature="2411:4652" ph="{...}" />
             <marker date="1561760856445" expanded="true" signature="3094:3748" ph="{...}" />
             <marker date="1561760856445" expanded="true" signature="4274:4642" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Automata/Types/General/Symbol.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-          <folding>
-            <marker date="1561759457047" expanded="true" signature="58:887" ph="{...}" />
-            <marker date="1561759457047" expanded="true" signature="124:206" ph="{...}" />
-            <marker date="1561759457047" expanded="true" signature="567:737" ph="{...}" />
-            <marker date="1561759457047" expanded="true" signature="599:727" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -626,52 +700,147 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Automata/Types/Configuration.cs">
+    <entry file="file://$PROJECT_DIR$/Tests/Automaton/DeterministicFiniteAutomatonTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        <state relative-caret-position="102">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
-            <marker date="1561847461892" expanded="false" signature="6:83" ph="..." />
-            <marker date="1561847461892" expanded="true" signature="110:1182" ph="{...}" />
-            <marker date="1561847461892" expanded="true" signature="152:1180" ph="{...}" />
-            <marker date="1561847461892" expanded="true" signature="222:314" ph="{...}" />
-            <marker date="1561847461892" expanded="true" signature="972:1174" ph="{...}" />
-            <marker date="1561847461892" expanded="true" signature="1004:1164" ph="{...}" />
+            <marker date="1561850344747" expanded="false" signature="6:206" ph="..." />
+            <marker date="1561850344747" expanded="true" signature="357:4931" ph="{...}" />
+            <marker date="1561850344747" expanded="true" signature="465:2409" ph="{...}" />
+            <marker date="1561850344747" expanded="true" signature="979:1309" ph="{...}" />
+            <marker date="1561850344747" expanded="true" signature="1986:2399" ph="{...}" />
+            <marker date="1561850344747" expanded="true" signature="2465:4925" ph="{...}" />
+            <marker date="1561850344747" expanded="true" signature="3107:3899" ph="{...}" />
+            <marker date="1561850344747" expanded="true" signature="4442:4915" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/FiniteAutomaton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="192" lean-forward="true" selection-start-line="10" selection-start-column="192" selection-end-line="10" selection-end-column="192" />
+          <folding>
+            <marker date="1561912535619" expanded="true" signature="6:64" ph="..." />
+            <marker date="1561912535619" expanded="true" signature="111:408" ph="{...}" />
+            <marker date="1561912535619" expanded="true" signature="172:406" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/NondeterministicFiniteAutomaton.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
-            <marker date="1561759070006" expanded="true" signature="6:158" ph="..." />
-            <marker date="1561759070006" expanded="true" signature="205:2341" ph="{...}" />
-            <marker date="1561759070006" expanded="true" signature="273:2339" ph="{...}" />
-            <marker date="1561759070006" expanded="true" signature="748:1368" ph="{...}" />
-            <marker date="1561759070006" expanded="true" signature="1725:2333" ph="{...}" />
-            <marker date="1561759070006" expanded="true" signature="1757:2323" ph="{...}" />
+            <marker date="1561912535489" expanded="true" signature="6:158" ph="..." />
+            <marker date="1561912535489" expanded="true" signature="274:2340" ph="{...}" />
+            <marker date="1561912535489" expanded="true" signature="749:1369" ph="{...}" />
+            <marker date="1561912535489" expanded="true" signature="1726:2334" ph="{...}" />
+            <marker date="1561912535489" expanded="true" signature="1758:2324" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Automaton/FiniteAutomaton/DeterministicFiniteAutomaton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <marker date="1561912535577" expanded="true" signature="6:136" ph="..." />
+            <marker date="1561912535577" expanded="true" signature="183:2071" ph="{...}" />
+            <marker date="1561912535577" expanded="true" signature="249:2069" ph="{...}" />
+            <marker date="1561912535577" expanded="true" signature="715:1104" ph="{...}" />
+            <marker date="1561912535577" expanded="true" signature="1455:2063" ph="{...}" />
+            <marker date="1561912535577" expanded="true" signature="1487:2053" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Automaton/BasicAutomaton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <marker date="1561912992284" expanded="false" signature="6:64" ph="..." />
+            <marker date="1561912992284" expanded="true" signature="95:1732" ph="{...}" />
+            <marker date="1561912992284" expanded="true" signature="150:1730" ph="{...}" />
+            <marker date="1561912992284" expanded="true" signature="285:468" ph="{...}" />
+            <marker date="1561912992284" expanded="true" signature="888:1382" ph="{...}" />
+            <marker date="1561912992284" expanded="true" signature="920:1372" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Automaton/Pushdown/PushdownAutomaton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding>
+            <marker date="1561912992181" expanded="true" signature="6:64" ph="..." />
+            <marker date="1561912992181" expanded="true" signature="104:1486" ph="{...}" />
+            <marker date="1561912992181" expanded="true" signature="167:1484" ph="{...}" />
+            <marker date="1561912992181" expanded="true" signature="457:578" ph="{...}" />
+            <marker date="1561912992181" expanded="true" signature="904:1281" ph="{...}" />
+            <marker date="1561912992181" expanded="true" signature="936:1271" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/PushdownPartialTransitionFunction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="154" selection-start-line="9" selection-start-column="154" selection-end-line="9" selection-end-column="154" />
+          <folding>
+            <marker date="1561913152963" expanded="false" signature="6:64" ph="..." />
+            <marker date="1561913152963" expanded="true" signature="100:1767" ph="{...}" />
+            <marker date="1561913152963" expanded="true" signature="162:1765" ph="{...}" />
+            <marker date="1561913152963" expanded="true" signature="339:540" ph="{...}" />
+            <marker date="1561913152963" expanded="true" signature="1253:1759" ph="{...}" />
+            <marker date="1561913152963" expanded="true" signature="1285:1749" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownPartialTransitionFunction.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        <state relative-caret-position="187">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding>
-            <marker date="1561849504602" expanded="false" signature="6:83" ph="..." />
-            <marker date="1561849504602" expanded="true" signature="133:612" ph="{...}" />
-            <marker date="1561849504602" expanded="true" signature="235:610" ph="{...}" />
+            <marker date="1561913153072" expanded="false" signature="6:83" ph="..." />
+            <marker date="1561913153072" expanded="true" signature="235:646" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/PushdownTransitionFunction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding>
+            <marker date="1561757407920" expanded="true" signature="33:103" ph="{...}" />
+            <marker date="1561757407920" expanded="true" signature="88:101" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Nondeterministic/NondeterministicPushdownPartialTransitionFunction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <marker date="1561913153008" expanded="true" signature="6:64" ph="..." />
+            <marker date="1561913153008" expanded="true" signature="117:620" ph="{...}" />
+            <marker date="1561913153008" expanded="true" signature="222:618" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Deterministic/DeterministicPushdownTransitionFunction.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+        <state relative-caret-position="476">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
           <folding>
             <marker date="1561849507526" expanded="false" signature="6:97" ph="..." />
             <marker date="1561849507526" expanded="true" signature="147:4197" ph="{...}" />
@@ -687,91 +856,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/PushdownConfiguration.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding>
-            <marker date="1561847158057" expanded="false" signature="6:64" ph="..." />
-            <marker date="1561847158057" expanded="true" signature="100:766" ph="{...}" />
-            <marker date="1561847158057" expanded="true" signature="157:764" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Stack.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-          <folding>
-            <marker date="1561849507684" expanded="false" signature="6:83" ph="..." />
-            <marker date="1561849507684" expanded="true" signature="119:1592" ph="{...}" />
-            <marker date="1561849507684" expanded="true" signature="144:1590" ph="{...}" />
-            <marker date="1561849507684" expanded="true" signature="363:462" ph="{...}" />
-            <marker date="1561849507684" expanded="true" signature="941:1184" ph="{...}" />
-            <marker date="1561849507684" expanded="true" signature="1461:1584" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Automata/Automaton/BasicAutomaton.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding>
-            <marker date="1561847462036" expanded="false" signature="6:64" ph="..." />
-            <marker date="1561847462036" expanded="true" signature="95:1221" ph="{...}" />
-            <marker date="1561847462036" expanded="true" signature="150:1219" ph="{...}" />
-            <marker date="1561847462036" expanded="true" signature="285:468" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Automata/Automaton/Pushdown/DeterministicPushdownAutomaton.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="544">
+          <caret line="32" column="73" selection-start-line="32" selection-start-column="73" selection-end-line="32" selection-end-column="73" />
           <folding>
-            <marker date="1561849507601" expanded="false" signature="6:173" ph="..." />
-            <marker date="1561849507601" expanded="true" signature="213:2955" ph="{...}" />
-            <marker date="1561849507601" expanded="true" signature="280:2953" ph="{...}" />
-            <marker date="1561849507601" expanded="true" signature="613:787" ph="{...}" />
-            <marker date="1561849507601" expanded="true" signature="1087:2020" ph="{...}" />
-            <marker date="1561849507601" expanded="true" signature="2254:2680" ph="{...}" />
-            <marker date="1561849507601" expanded="true" signature="2286:2670" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/Automaton/DeterministicFiniteAutomatonTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="15" selection-end-column="46" />
-          <folding>
-            <marker date="1561761118372" expanded="true" signature="6:206" ph="..." />
-            <marker date="1561761118372" expanded="true" signature="234:4863" ph="{...}" />
-            <marker date="1561761118372" expanded="true" signature="287:4861" ph="{...}" />
-            <marker date="1561761118372" expanded="true" signature="395:2339" ph="{...}" />
-            <marker date="1561761118372" expanded="true" signature="909:1239" ph="{...}" />
-            <marker date="1561761118372" expanded="true" signature="1916:2329" ph="{...}" />
-            <marker date="1561761118372" expanded="true" signature="2395:4855" ph="{...}" />
-            <marker date="1561761118372" expanded="true" signature="3037:3829" ph="{...}" />
-            <marker date="1561761118372" expanded="true" signature="4372:4845" ph="{...}" />
+            <marker date="1561914374069" expanded="true" signature="6:159" ph="..." />
+            <marker date="1561914374069" expanded="true" signature="269:2344" ph="{...}" />
+            <marker date="1561914374069" expanded="true" signature="827:1748" ph="{...}" />
+            <marker date="1561914374069" expanded="true" signature="1466:1662" ph="{...}" />
+            <marker date="1561914374069" expanded="true" signature="1982:2175" ph="{...}" />
+            <marker date="1561914374069" expanded="true" signature="2014:2165" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/Automaton/DeterministicPushdownAutomatonTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+        <state relative-caret-position="17">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="16" />
           <folding>
-            <marker date="1561850115625" expanded="true" signature="6:201" ph="..." />
-            <marker date="1561850115625" expanded="true" signature="229:4393" ph="{...}" />
-            <marker date="1561850115625" expanded="true" signature="284:4391" ph="{...}" />
-            <marker date="1561850115625" expanded="true" signature="389:4385" ph="{...}" />
-            <marker date="1561850115625" expanded="true" signature="1356:2719" ph="{...}" />
-            <marker date="1561850115625" expanded="true" signature="3155:4375" ph="{...}" />
+            <marker date="1561916057952" expanded="true" signature="284:4772" ph="{...}" />
+            <marker date="1561916057952" expanded="true" signature="389:4766" ph="{...}" />
+            <marker date="1561916057952" expanded="true" signature="1356:2719" ph="{...}" />
+            <marker date="1561916057952" expanded="true" signature="3298:4756" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Types/General/Symbol.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding>
+            <marker date="1561759457047" expanded="true" signature="32:889" ph="{...}" />
+            <marker date="1561759457047" expanded="true" signature="58:887" ph="{...}" />
+            <marker date="1561759457047" expanded="true" signature="124:206" ph="{...}" />
+            <marker date="1561759457047" expanded="true" signature="567:737" ph="{...}" />
+            <marker date="1561759457047" expanded="true" signature="599:727" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Types/Configuration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <marker date="1561847461892" expanded="false" signature="6:83" ph="..." />
+            <marker date="1561847461892" expanded="true" signature="110:1182" ph="{...}" />
+            <marker date="1561847461892" expanded="true" signature="152:1180" ph="{...}" />
+            <marker date="1561847461892" expanded="true" signature="222:314" ph="{...}" />
+            <marker date="1561847461892" expanded="true" signature="972:1174" ph="{...}" />
+            <marker date="1561847461892" expanded="true" signature="1004:1164" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/PushdownConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <marker date="1561916657739" expanded="false" signature="6:64" ph="..." />
+            <marker date="1561916657739" expanded="true" signature="100:915" ph="{...}" />
+            <marker date="1561916657739" expanded="true" signature="157:913" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Types/General/State.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <marker date="1561916657697" expanded="true" signature="32:559" ph="{...}" />
+            <marker date="1561916657697" expanded="true" signature="57:557" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Nondeterministic/NondeterministicPushdownTransitionFunction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
+          <folding>
+            <marker date="1561913999274" expanded="true" signature="6:142" ph="..." />
+            <marker date="1561913999274" expanded="true" signature="195:3983" ph="{...}" />
+            <marker date="1561913999274" expanded="true" signature="286:3981" ph="{...}" />
+            <marker date="1561913999274" expanded="true" signature="1465:3403" ph="{...}" />
+            <marker date="1561913999274" expanded="true" signature="2131:2500" ph="{...}" />
+            <marker date="1561913999274" expanded="true" signature="2545:2909" ph="{...}" />
+            <marker date="1561913999274" expanded="true" signature="2984:3353" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Automaton/NondeterministicPushdownAutomatonTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803">
+          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+          <folding>
+            <marker date="1561916736106" expanded="true" signature="6:204" ph="..." />
+            <marker date="1561916736106" expanded="true" signature="232:5950" ph="{...}" />
+            <marker date="1561916736106" expanded="true" signature="290:5948" ph="{...}" />
+            <marker date="1561916736106" expanded="true" signature="394:5942" ph="{...}" />
+            <marker date="1561916736106" expanded="true" signature="1526:3050" ph="{...}" />
+            <marker date="1561916736106" expanded="true" signature="4033:5932" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Automaton/Pushdown/NondeterministicPushdownAutomaton.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="103" selection-start-line="26" selection-start-column="103" selection-end-line="26" selection-end-column="103" />
+          <folding>
+            <marker date="1561914394409" expanded="true" signature="6:162" ph="..." />
+            <marker date="1561914394409" expanded="true" signature="202:2308" ph="{...}" />
+            <marker date="1561914394409" expanded="true" signature="275:2306" ph="{...}" />
+            <marker date="1561914394409" expanded="true" signature="896:1740" ph="{...}" />
+            <marker date="1561914394409" expanded="true" signature="1303:1626" ph="{...}" />
+            <marker date="1561914394409" expanded="true" signature="2142:2300" ph="{...}" />
+            <marker date="1561914394409" expanded="true" signature="2174:2290" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Automata/Types/Pushdown/Stack.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="69" />
+          <folding>
+            <marker date="1561917255134" expanded="false" signature="6:83" ph="..." />
+            <marker date="1561917255134" expanded="true" signature="119:1749" ph="{...}" />
+            <marker date="1561917255134" expanded="true" signature="144:1747" ph="{...}" />
+            <marker date="1561917255134" expanded="true" signature="363:462" ph="{...}" />
+            <marker date="1561917255134" expanded="true" signature="941:1205" ph="{...}" />
+            <marker date="1561917255134" expanded="true" signature="1503:1626" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -33,7 +33,7 @@ namespace Automata.Types.Pushdown
 
         public Stack Push (Symbol symbol)
         {
-            var newContent = new Stack <Symbol> (Content);
+            var newContent = new Stack <Symbol> (new Stack <Symbol> (Content));
 
             if (symbol.IsEpsilon)
                 return new Stack (newContent);
@@ -46,7 +46,7 @@ namespace Automata.Types.Pushdown
             => Content.TryPeek (out var s) ? s : Symbol.EPSILON;
 
         public Stack SkipNext ()
-            => new Stack (new Stack <Symbol> (Content.Count > 0 ? Content.Skip (1) : Content));
+            => new Stack (new Stack <Symbol> (new Stack <Symbol> (Content.Count > 0 ? Content.Skip (1) : Content)));
 
         public Stack OverwriteTop (Symbol symbol)
         {
@@ -55,5 +55,9 @@ namespace Automata.Types.Pushdown
 
             return skipped;
         }
+
+        /// <inheritdoc />
+        public override string ToString ()
+            => string.Join (", ", Content);
     }
 }
