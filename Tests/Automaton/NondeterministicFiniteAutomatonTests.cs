@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-using Automata.Automaton.FiniteAutomaton;
+using Automata.Automaton.Finite;
 using Automata.Types.Finite.Nondeterministic;
 using Automata.Types.General;
 

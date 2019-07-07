@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Automata.Types.General;
 
 
-namespace Automata.Automaton.FiniteAutomaton
+namespace Automata.Automaton.Finite
 {
     public abstract class FiniteAutomaton : BasicAutomaton
     {

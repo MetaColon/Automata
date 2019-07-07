@@ -1,10 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using Automata.Types.General;
 
-
-namespace Automata.Types
+namespace Automata.Types.General
 {
     public abstract class Configuration
     {

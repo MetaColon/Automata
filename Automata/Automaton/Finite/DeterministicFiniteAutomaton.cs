@@ -5,7 +5,7 @@ using Automata.Types.Finite.Deterministic;
 using Automata.Types.General;
 
 
-namespace Automata.Automaton.FiniteAutomaton
+namespace Automata.Automaton.Finite
 {
     public class DeterministicFiniteAutomaton : FiniteAutomaton
     {

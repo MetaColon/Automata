@@ -6,7 +6,7 @@ using Automata.Types.Finite.Nondeterministic;
 using Automata.Types.General;
 
 
-namespace Automata.Automaton.FiniteAutomaton
+namespace Automata.Automaton.Finite
 {
     public class NondeterministicFiniteAutomaton : FiniteAutomaton
     {

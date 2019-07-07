@@ -15,7 +15,7 @@
         <e p="Automaton" t="Include">
           <e p="Automaton.cs" t="Include" />
           <e p="BasicAutomaton.cs" t="Include" />
-          <e p="FiniteAutomaton" t="Include">
+          <e p="Finite" t="Include">
             <e p="DeterministicFiniteAutomaton.cs" t="Include" />
             <e p="FiniteAutomaton.cs" t="Include" />
             <e p="NondeterministicFiniteAutomaton.cs" t="Include" />
@@ -24,6 +24,9 @@
             <e p="DeterministicPushdownAutomaton.cs" t="Include" />
             <e p="NondeterministicPushdownAutomaton.cs" t="Include" />
             <e p="PushdownAutomaton.cs" t="Include" />
+          </e>
+          <e p="Turing" t="Include">
+            <e p="BasicTuringMachine.cs" t="Include" />
           </e>
         </e>
         <e p="bin" t="ExcludeRecursive" />
@@ -35,7 +38,6 @@
           </e>
         </e>
         <e p="Types" t="Include">
-          <e p="Configuration.cs" t="Include" />
           <e p="Finite" t="Include">
             <e p="Deterministic" t="Include">
               <e p="DeterministicFinitePartialTransitionFunction.cs" t="Include" />
@@ -51,6 +53,7 @@
           </e>
           <e p="General" t="Include">
             <e p="Alphabet.cs" t="Include" />
+            <e p="Configuration.cs" t="Include" />
             <e p="State.cs" t="Include" />
             <e p="Symbol.cs" t="Include" />
             <e p="Word.cs" t="Include" />
@@ -68,6 +71,17 @@
             <e p="PushdownPartialTransitionFunction.cs" t="Include" />
             <e p="PushdownTransitionFunction.cs" t="Include" />
             <e p="Stack.cs" t="Include" />
+          </e>
+          <e p="Turing" t="Include">
+            <e p="Basic" t="Include">
+              <e p="BasicTuringConfiguration.cs" t="Include" />
+              <e p="BasicTuringPartialTransitionFunction.cs" t="Include" />
+              <e p="BasicTuringTransitionFunction.cs" t="Include" />
+              <e p="MovementDirection.cs" t="Include" />
+            </e>
+            <e p="Tape.cs" t="Include" />
+            <e p="TapeAlphabet.cs" t="Include" />
+            <e p="TapeSymbol.cs" t="Include" />
           </e>
         </e>
       </e>
