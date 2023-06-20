@@ -1,2 +1,2 @@
 # Automata
-A project for simulating various automata (i.e. a Deterministic Finite Automaton)
+A project for simulating various automata (e.g. a Deterministic Finite Automaton)
